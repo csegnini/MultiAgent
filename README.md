@@ -1,5 +1,5 @@
 # MultiAgent
-Multi Agent Data Analysis and Insights
+Multi Agent Data Analysis, Insights and Automation of Complex Processes
 ## Project Workflow
 
 This project is a multi-agent system designed for the automated collection, analysis, and simplification of economic and web trend time series data. The workflow is orchestrated through a main `OrchestratorAgent` and is divided into three main phases, each handled by a specialized agent:
