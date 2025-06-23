@@ -18,7 +18,7 @@ modeling_agent = LlmAgent(
     model=GEMINI_MODEL,
     description=(
         "A conversational data analyst assistant. It guides the user through various modeling tasks like "
-        "similarity analysis, correlation, forecasting, and causality testing. It interactively asks for "
+        "similarity analysis, correlation. It interactively asks for "
         "the necessary parameters to perform the analysis."
     ),
     instruction=(
@@ -36,7 +36,6 @@ modeling_agent = LlmAgent(
         "2. **THIRD STEP: EXECUTE THE CHOSEN ANALYSIS**\n"
         "   - Now, using the **final, processed file** from the pipeline, execute the analysis the user originally chose.\n"
         "   - **If 'Correlation'**: Use the `calculate_and_plot_correlation` tool on the final file from the pipeline.\n"
-        "   - **If 'Causality Analysis'**: This option seems to be missing a specific tool in your `tools.py`. You would need to implement a tool for this analysis.\n\n"
         "3. **FINAL STEP: REPORT**\n"
         "   - Report the results back to the user, providing the file paths of any generated artifacts (plots or data files)."
     ),
