@@ -1,0 +1,12 @@
+google-adk
+pandas
+requests
+python-dotenv
+serpapi
+scikit-learn
+statsmodels
+numpy
+google-search-results
+matplotlib
+seaborn
+# Add any other libraries used in Rendering final defs.py (e.g., numpy, collections), fredapi
