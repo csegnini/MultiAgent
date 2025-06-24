@@ -367,13 +367,6 @@ def calculate_and_plot_correlation(input_csv_path: str) -> str:
         )
         plt.savefig(plot_output_path, bbox_inches="tight")
         plt.close()
-        result = {
-            "message": "Correlation analysis complete.",
-            "correlation_matrix_csv_path": csv_output_path,
-            "correlation_heatmap_png_path": plot_output_path,
-        }
-        return json.dumps(result)
-
+        return f"Correlation matrix saved to {csv_output_path} and heatmap saved to {plot_output_path}"
     except Exception as e:
-        logging.error(f"Modeling Agent: Error calculating correlation: {e}")
-        return json.dumps({"error": f"Error calculating correlation: {e}"})
+        return f"Error calculating correlation: {e}"
