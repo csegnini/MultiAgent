@@ -1,5 +1,6 @@
-# MultiAgent
-Multi Agent Data Analysis, Insights and Automation of Complex Processes
+https://github.com/csegnini/MultiAgent
+Hi i want to do some data analysis about Industrial Production and coffee web searches in the year 2024 at US
+
 ## Project Workflow
 
 This project is a multi-agent system designed for the automated collection, analysis, and simplification of economic and web trend time series data. The workflow is orchestrated through a main `OrchestratorAgent` and is divided into three main phases, each handled by a specialized agent:
@@ -10,6 +11,7 @@ This project is a multi-agent system designed for the automated collection, anal
 - **Process**:
   - The agent uses a local mapping of keywords to FRED category IDs to find relevant economic data categories.
   - It then queries the FRED API to download the time series data corresponding to those categories for a specified time frame.
+  - It then aggregates or disaggrates the time series to match a 'target frequency'(by default monthly) for example quaterly data to monthly or monthly to annual.
 - **Output**: A CSV file containing the raw economic data (e.g., `fred_data_Industrial_Production.csv`).
 
 ### 2. Trends Agent: Web Search Data Retrieval
