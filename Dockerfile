@@ -13,7 +13,7 @@ COPY . .
 
 USER myuser
 
-ENV PORT=8000
+ENV PORT=8080
 ENV PATH="/home/myuser/.local/bin:$PATH"
 
 EXPOSE ${PORT}
